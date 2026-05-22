@@ -349,7 +349,13 @@ h1:before {
     font-size: 10px;
   }
   .main .box-om img {
-    position: relative;
+      width: 40%;
+
+  position: absolute;
+  left: 200px;
+  bottom: 1px;
+
+  border-radius: 50%;
   }
 }
 
