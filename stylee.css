@@ -11,11 +11,11 @@
 }
 body {
   min-height: 100%;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   min-width: 100%;
 }
 header {
-  background-color: #ffffff;
+  background-color: #ffffffd4;
   width: 95%;
   position: fixed;
   z-index: 1000;
@@ -27,7 +27,7 @@ header {
   text-decoration: none;
   color: #3a6cf4;
   text-transform: uppercase;
-  font-weight: 1000;
+  font-weight: 900;
   font-size: 1.9em;
 }
 
@@ -41,7 +41,7 @@ nav ul {
   color: #3a6cf4;
   padding: 20px;
   text-decoration: none;
-  font-size: 1.9em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 li:hover {
@@ -127,12 +127,12 @@ h1:before {
 }
 
 .vvv {
-  border-style: solid;
-  border-width: 7px;
-  border-color: linear-gradient(yellow, red, black);
+  border-width: 20px;
+
+  border-color: linear-gradient(rgb(190, 13, 172));
   animation-name: vvv;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  animation-duration: 10s;
+
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
@@ -140,19 +140,23 @@ h1:before {
 @keyframes vvv {
   25% {
     transform: translate(0px);
-    border-color: linear-gradient(yellow, red, rgb(217, 217, 217));
+    border-style: dashed;
+    border-color: rgb(0, 62, 134);
   }
   50% {
-    transform: translate(20px);
-    border-color: rgb(30, 201, 78);
+    transform: translate(0px);
+    border-style: dashed;
+    border-color: rgb(18, 160, 58);
   }
   75% {
-    transform: translate(0px);
-    border-color: rgb(223, 249, 72);
+    transform: translate(20px);
+    border-style: dashed;
+    border-color: rgb(150, 168, 48);
   }
   100% {
+    border-style: dashed;
     transform: translate(0px);
-    border-color: rgb(23, 71, 214);
+    border-color: rgba(23, 71, 214, 0.74);
   }
 }
 .social-icons a {
@@ -275,14 +279,13 @@ h1:before {
 }
 
 .footer {
-  background-color: #3b5f7bc3;
   justify-content: center;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer-title {
-  font-size: 1.9em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
@@ -291,7 +294,7 @@ h1:before {
 }
 
 .footer .social-icons a {
-  font-size: 1.9em;
+  font-size: 1.5em;
   padding: 0 12px 0 0;
   color: #2f2828;
 }
@@ -341,15 +344,12 @@ h1:before {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   body {
     font-size: 10px;
   }
   .main .box-om img {
-    width: 50%;
-    position: absolute;
-    left: 300px;
-    bottom: 50px;
-    border-radius: 90%;
+    position: relative;
   }
 }
+
